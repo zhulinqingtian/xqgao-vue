@@ -1,0 +1,835 @@
+{
+  "userInfo": {
+    "data": {
+      "id": 13,
+      "username": "云溪",
+      "account_left": 111,
+      "department": "技术",
+      "powerList": ["notify", "marketing"]
+    }
+  },
+  "stapleFood": {
+    "data": [
+      {
+        "id": 1,
+        "f_name": "米饭",
+        "price": 2,
+        "stock": 100,
+        "src": "./static/image/commodity/example.png",
+        "buyNum": 0,
+        "attibutes": [
+          {
+            "id": 1,
+            "title": "有食欲",
+            "description": "外观很漂亮，有个显示屏，好高大尚，睡眠模式非常安静！",
+            "imgUrl": "./static/image/commodity/qrcode.png"
+          },
+          {
+            "id": 2,
+            "title": "性价比高",
+            "description": "外观很漂亮，有个显示屏，好高大尚，睡眠模式非常安静！",
+            "imgUrl": "./static/image/commodity/qrcode.png"
+          },
+          {
+            "id": 3,
+            "title": "食用方便",
+            "description": "外观很漂亮，有个显示屏，好高大尚，睡眠模式非常安静！",
+            "imgUrl": "./static/image/commodity/qrcode.png"
+          },
+          {
+            "id": 4,
+            "title": "适合任意人群",
+            "description": "外观很漂亮，有个显示屏，好高大尚，睡眠模式非常安静！",
+            "imgUrl": "./static/image/commodity/qrcode.png"
+          },
+          {
+            "id": 5,
+            "title": "味道好",
+            "description": "外观很漂亮，有个显示屏，好高大尚，睡眠模式非常安静！",
+            "imgUrl": "./static/image/commodity/qrcode.png"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "f_name": "面条",
+        "price": 4,
+        "stock": 300,
+        "src": "./static/image/commodity/example.png",
+        "buyNum": 0,
+        "attibutes": [
+          {
+            "id": 1,
+            "title": "有食欲",
+            "description": "外观很漂亮，有个显示屏，好高大尚，睡眠模式非常安静！",
+            "imgUrl": "./static/image/commodity/qrcode.png"
+          },
+          {
+            "id": 2,
+            "title": "性价比高",
+            "description": "外观很漂亮，有个显示屏，好高大尚，睡眠模式非常安静！",
+            "imgUrl": "./static/image/commodity/qrcode.png"
+          },
+          {
+            "id": 3,
+            "title": "食用方便",
+            "description": "外观很漂亮，有个显示屏，好高大尚，睡眠模式非常安静！",
+            "imgUrl": "./static/image/commodity/qrcode.png"
+          },
+          {
+            "id": 4,
+            "title": "适合任意人群",
+            "description": "外观很漂亮，有个显示屏，好高大尚，睡眠模式非常安静！",
+            "imgUrl": "./static/image/commodity/qrcode.png"
+          },
+          {
+            "id": 5,
+            "title": "味道好",
+            "description": "外观很漂亮，有个显示屏，好高大尚，睡眠模式非常安静！",
+            "imgUrl": "./static/image/commodity/qrcode.png"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "f_name": "馒头",
+        "price": 1,
+        "stock": 100,
+        "src": "./static/image/commodity/example.png",
+        "buyNum": 0,
+        "attibutes": [
+          {
+            "id": 1,
+            "title": "有食欲",
+            "description": "外观很漂亮，有个显示屏，好高大尚，睡眠模式非常安静！",
+            "imgUrl": "./static/image/commodity/qrcode.png"
+          },
+          {
+            "id": 2,
+            "title": "性价比高",
+            "description": "外观很漂亮，有个显示屏，好高大尚，睡眠模式非常安静！",
+            "imgUrl": "./static/image/commodity/qrcode.png"
+          },
+          {
+            "id": 3,
+            "title": "食用方便",
+            "description": "外观很漂亮，有个显示屏，好高大尚，睡眠模式非常安静！",
+            "imgUrl": "./static/image/commodity/qrcode.png"
+          },
+          {
+            "id": 4,
+            "title": "适合任意人群",
+            "description": "外观很漂亮，有个显示屏，好高大尚，睡眠模式非常安静！",
+            "imgUrl": "./static/image/commodity/qrcode.png"
+          },
+          {
+            "id": 5,
+            "title": "味道好",
+            "description": "外观很漂亮，有个显示屏，好高大尚，睡眠模式非常安静！",
+            "imgUrl": "./static/image/commodity/qrcode.png"
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "f_name": "猫耳朵",
+        "price": 6,
+        "stock": 50,
+        "src": "./static/image/commodity/example.png",
+        "buyNum": 0,
+        "attibutes": [
+          {
+            "id": 1,
+            "title": "有食欲",
+            "description": "外观很漂亮，有个显示屏，好高大尚，睡眠模式非常安静！",
+            "imgUrl": "./static/image/commodity/qrcode.png"
+          },
+          {
+            "id": 2,
+            "title": "性价比高",
+            "description": "外观很漂亮，有个显示屏，好高大尚，睡眠模式非常安静！",
+            "imgUrl": "./static/image/commodity/qrcode.png"
+          },
+          {
+            "id": 3,
+            "title": "食用方便",
+            "description": "外观很漂亮，有个显示屏，好高大尚，睡眠模式非常安静！",
+            "imgUrl": "./static/image/commodity/qrcode.png"
+          },
+          {
+            "id": 4,
+            "title": "适合任意人群",
+            "description": "外观很漂亮，有个显示屏，好高大尚，睡眠模式非常安静！",
+            "imgUrl": "./static/image/commodity/qrcode.png"
+          },
+          {
+            "id": 5,
+            "title": "味道好",
+            "description": "外观很漂亮，有个显示屏，好高大尚，睡眠模式非常安静！",
+            "imgUrl": "./static/image/commodity/qrcode.png"
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "f_name": "莜面",
+        "price": 6,
+        "stock": 50,
+        "src": "./static/image/commodity/example.png",
+        "buyNum": 0,
+        "attibutes": [
+          {
+            "id": 1,
+            "title": "有食欲",
+            "description": "外观很漂亮，有个显示屏，好高大尚，睡眠模式非常安静！",
+            "imgUrl": "./static/image/commodity/qrcode.png"
+          },
+          {
+            "id": 2,
+            "title": "性价比高",
+            "description": "外观很漂亮，有个显示屏，好高大尚，睡眠模式非常安静！",
+            "imgUrl": "./static/image/commodity/qrcode.png"
+          },
+          {
+            "id": 3,
+            "title": "食用方便",
+            "description": "外观很漂亮，有个显示屏，好高大尚，睡眠模式非常安静！",
+            "imgUrl": "./static/image/commodity/qrcode.png"
+          },
+          {
+            "id": 4,
+            "title": "适合任意人群",
+            "description": "外观很漂亮，有个显示屏，好高大尚，睡眠模式非常安静！",
+            "imgUrl": "./static/image/commodity/qrcode.png"
+          },
+          {
+            "id": 5,
+            "title": "味道好",
+            "description": "外观很漂亮，有个显示屏，好高大尚，睡眠模式非常安静！",
+            "imgUrl": "./static/image/commodity/qrcode.png"
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "f_name": "葱花饼",
+        "price": 6,
+        "stock": 50,
+        "src": "./static/image/commodity/example.png",
+        "buyNum": 0,
+        "attibutes": [
+          {
+            "id": 1,
+            "title": "有食欲",
+            "description": "外观很漂亮，有个显示屏，好高大尚，睡眠模式非常安静！",
+            "imgUrl": "./static/image/commodity/qrcode.png"
+          },
+          {
+            "id": 2,
+            "title": "性价比高",
+            "description": "外观很漂亮，有个显示屏，好高大尚，睡眠模式非常安静！",
+            "imgUrl": "./static/image/commodity/qrcode.png"
+          },
+          {
+            "id": 3,
+            "title": "食用方便",
+            "description": "外观很漂亮，有个显示屏，好高大尚，睡眠模式非常安静！",
+            "imgUrl": "./static/image/commodity/qrcode.png"
+          },
+          {
+            "id": 4,
+            "title": "适合任意人群",
+            "description": "外观很漂亮，有个显示屏，好高大尚，睡眠模式非常安静！",
+            "imgUrl": "./static/image/commodity/qrcode.png"
+          },
+          {
+            "id": 5,
+            "title": "味道好",
+            "description": "外观很漂亮，有个显示屏，好高大尚，睡眠模式非常安静！",
+            "imgUrl": "./static/image/commodity/qrcode.png"
+          }
+        ]
+      }
+    ]
+  },
+  "snacks": {
+    "data": [
+      {
+        "id": 1,
+        "f_name": "小食1",
+        "price": 4,
+        "stock": 100,
+        "src": "./static/image/commodity/example.png",
+        "buyNum": 0,
+        "attibutes": [
+          {
+            "id": 1,
+            "title": "外型漂亮",
+            "description": "外观很漂亮，有个显示屏，好高大尚，睡眠模式非常安静！",
+            "imgUrl": "./static/image/commodity/qrcode.png"
+          },
+          {
+            "id": 2,
+            "title": "性价比高",
+            "description": "外观很漂亮，有个显示屏，好高大尚，睡眠模式非常安静！",
+            "imgUrl": "./static/image/commodity/qrcode.png"
+          },
+          {
+            "id": 3,
+            "title": "方便收拾",
+            "description": "外观很漂亮，有个显示屏，好高大尚，睡眠模式非常安静！",
+            "imgUrl": "./static/image/commodity/qrcode.png"
+          },
+          {
+            "id": 4,
+            "title": "适合任意人群",
+            "description": "外观很漂亮，有个显示屏，好高大尚，睡眠模式非常安静！",
+            "imgUrl": "./static/image/commodity/qrcode.png"
+          },
+          {
+            "id": 5,
+            "title": "包装精美",
+            "description": "外观很漂亮，有个显示屏，好高大尚，睡眠模式非常安静！",
+            "imgUrl": "./static/image/commodity/qrcode.png"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "f_name": "小食2",
+        "price": 5.5,
+        "stock": 300,
+        "src": "./static/image/commodity/example.png",
+        "buyNum": 0,
+        "attibutes": [
+          {
+            "id": 1,
+            "title": "外型漂亮",
+            "description": "外观很漂亮，有个显示屏，好高大尚，睡眠模式非常安静！",
+            "imgUrl": "./static/image/commodity/qrcode.png"
+          },
+          {
+            "id": 2,
+            "title": "性价比高",
+            "description": "外观很漂亮，有个显示屏，好高大尚，睡眠模式非常安静！",
+            "imgUrl": "./static/image/commodity/qrcode.png"
+          },
+          {
+            "id": 3,
+            "title": "方便收拾",
+            "description": "外观很漂亮，有个显示屏，好高大尚，睡眠模式非常安静！",
+            "imgUrl": "./static/image/commodity/qrcode.png"
+          },
+          {
+            "id": 4,
+            "title": "适合任意人群",
+            "description": "外观很漂亮，有个显示屏，好高大尚，睡眠模式非常安静！",
+            "imgUrl": "./static/image/commodity/qrcode.png"
+          },
+          {
+            "id": 5,
+            "title": "包装精美",
+            "description": "外观很漂亮，有个显示屏，好高大尚，睡眠模式非常安静！",
+            "imgUrl": "./static/image/commodity/qrcode.png"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "f_name": "小食3",
+        "price": 6,
+        "stock": 100,
+        "src": "./static/image/commodity/example.png",
+        "buyNum": 0,
+        "attibutes": [
+          {
+            "id": 1,
+            "title": "外型漂亮",
+            "description": "外观很漂亮，有个显示屏，好高大尚，睡眠模式非常安静！",
+            "imgUrl": "./static/image/commodity/qrcode.png"
+          },
+          {
+            "id": 2,
+            "title": "性价比高",
+            "description": "外观很漂亮，有个显示屏，好高大尚，睡眠模式非常安静！",
+            "imgUrl": "./static/image/commodity/qrcode.png"
+          },
+          {
+            "id": 3,
+            "title": "方便收拾",
+            "description": "外观很漂亮，有个显示屏，好高大尚，睡眠模式非常安静！",
+            "imgUrl": "./static/image/commodity/qrcode.png"
+          },
+          {
+            "id": 4,
+            "title": "适合任意人群",
+            "description": "外观很漂亮，有个显示屏，好高大尚，睡眠模式非常安静！",
+            "imgUrl": "./static/image/commodity/qrcode.png"
+          },
+          {
+            "id": 5,
+            "title": "包装精美",
+            "description": "外观很漂亮，有个显示屏，好高大尚，睡眠模式非常安静！",
+            "imgUrl": "./static/image/commodity/qrcode.png"
+          }
+        ]
+      }
+    ]
+  },
+  "drinks": {
+    "data": [
+      {
+        "id": 1,
+        "f_name": "饮料1",
+        "price": 4,
+        "stock": 100,
+        "src": "./static/image/commodity/example.png",
+        "buyNum": 0,
+        "attibutes": [
+          {
+            "id": 1,
+            "title": "外观漂亮",
+            "description": "外观很漂亮，有个显示屏，好高大尚，睡眠模式非常安静！",
+            "imgUrl": "./static/image/commodity/qrcode.png"
+          },
+          {
+            "id": 2,
+            "title": "性价比高",
+            "description": "外观很漂亮，有个显示屏，好高大尚，睡眠模式非常安静！",
+            "imgUrl": "./static/image/commodity/qrcode.png"
+          },
+          {
+            "id": 3,
+            "title": "食用方便",
+            "description": "外观很漂亮，有个显示屏，好高大尚，睡眠模式非常安静！",
+            "imgUrl": "./static/image/commodity/qrcode.png"
+          },
+          {
+            "id": 4,
+            "title": "适合任意人群",
+            "description": "外观很漂亮，有个显示屏，好高大尚，睡眠模式非常安静！",
+            "imgUrl": "./static/image/commodity/qrcode.png"
+          },
+          {
+            "id": 5,
+            "title": "营养价值高",
+            "description": "外观很漂亮，有个显示屏，好高大尚，睡眠模式非常安静！",
+            "imgUrl": "./static/image/commodity/qrcode.png"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "f_name": "饮料2",
+        "price": 5.5,
+        "stock": 300,
+        "src": "./static/image/commodity/example.png",
+        "buyNum": 0,
+        "attibutes": [
+          {
+            "id": 1,
+            "title": "外观漂亮",
+            "description": "外观很漂亮，有个显示屏，好高大尚，睡眠模式非常安静！",
+            "imgUrl": "./static/image/commodity/qrcode.png"
+          },
+          {
+            "id": 2,
+            "title": "性价比高",
+            "description": "外观很漂亮，有个显示屏，好高大尚，睡眠模式非常安静！",
+            "imgUrl": "./static/image/commodity/qrcode.png"
+          },
+          {
+            "id": 3,
+            "title": "食用方便",
+            "description": "外观很漂亮，有个显示屏，好高大尚，睡眠模式非常安静！",
+            "imgUrl": "./static/image/commodity/qrcode.png"
+          },
+          {
+            "id": 4,
+            "title": "适合任意人群",
+            "description": "外观很漂亮，有个显示屏，好高大尚，睡眠模式非常安静！",
+            "imgUrl": "./static/image/commodity/qrcode.png"
+          },
+          {
+            "id": 5,
+            "title": "营养价值高",
+            "description": "外观很漂亮，有个显示屏，好高大尚，睡眠模式非常安静！",
+            "imgUrl": "./static/image/commodity/qrcode.png"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "f_name": "饮料3",
+        "price": 6,
+        "stock": 100,
+        "src": "./static/image/commodity/example.png",
+        "buyNum": 0,
+        "attibutes": [
+          {
+            "id": 1,
+            "title": "外观漂亮",
+            "description": "外观很漂亮，有个显示屏，好高大尚，睡眠模式非常安静！",
+            "imgUrl": "./static/image/commodity/qrcode.png"
+          },
+          {
+            "id": 2,
+            "title": "性价比高",
+            "description": "外观很漂亮，有个显示屏，好高大尚，睡眠模式非常安静！",
+            "imgUrl": "./static/image/commodity/qrcode.png"
+          },
+          {
+            "id": 3,
+            "title": "食用方便",
+            "description": "外观很漂亮，有个显示屏，好高大尚，睡眠模式非常安静！",
+            "imgUrl": "./static/image/commodity/qrcode.png"
+          },
+          {
+            "id": 4,
+            "title": "适合任意人群",
+            "description": "外观很漂亮，有个显示屏，好高大尚，睡眠模式非常安静！",
+            "imgUrl": "./static/image/commodity/qrcode.png"
+          },
+          {
+            "id": 5,
+            "title": "营养价值高",
+            "description": "外观很漂亮，有个显示屏，好高大尚，睡眠模式非常安静！",
+            "imgUrl": "./static/image/commodity/qrcode.png"
+          }
+        ]
+      }
+    ]
+  },
+  "packages": {
+    "data": [
+      {
+        "id": 1,
+        "f_name": "套餐1",
+        "price": 28,
+        "stock": 100,
+        "src": "./static/image/commodity/example.png",
+        "buyNum": 0,
+        "attibutes": [
+          {
+            "id": 1,
+            "title": "外观漂亮",
+            "description": "外观很漂亮，有个显示屏，好高大尚，睡眠模式非常安静！",
+            "imgUrl": "./static/image/commodity/qrcode.png"
+          },
+          {
+            "id": 2,
+            "title": "性价比高",
+            "description": "外观很漂亮，有个显示屏，好高大尚，睡眠模式非常安静！",
+            "imgUrl": "./static/image/commodity/qrcode.png"
+          },
+          {
+            "id": 3,
+            "title": "包装精美",
+            "description": "外观很漂亮，有个显示屏，好高大尚，睡眠模式非常安静！",
+            "imgUrl": "./static/image/commodity/qrcode.png"
+          },
+          {
+            "id": 4,
+            "title": "适合任意人群",
+            "description": "外观很漂亮，有个显示屏，好高大尚，睡眠模式非常安静！",
+            "imgUrl": "./static/image/commodity/qrcode.png"
+          },
+          {
+            "id": 5,
+            "title": "营养搭配",
+            "description": "外观很漂亮，有个显示屏，好高大尚，睡眠模式非常安静！",
+            "imgUrl": "./static/image/commodity/qrcode.png"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "f_name": "套餐2",
+        "price": 35,
+        "stock": 300,
+        "src": "./static/image/commodity/example.png",
+        "buyNum": 0,
+        "attibutes": [
+          {
+            "id": 1,
+            "title": "外观漂亮",
+            "description": "外观很漂亮，有个显示屏，好高大尚，睡眠模式非常安静！",
+            "imgUrl": "./static/image/commodity/qrcode.png"
+          },
+          {
+            "id": 2,
+            "title": "性价比高",
+            "description": "外观很漂亮，有个显示屏，好高大尚，睡眠模式非常安静！",
+            "imgUrl": "./static/image/commodity/qrcode.png"
+          },
+          {
+            "id": 3,
+            "title": "包装精美",
+            "description": "外观很漂亮，有个显示屏，好高大尚，睡眠模式非常安静！",
+            "imgUrl": "./static/image/commodity/qrcode.png"
+          },
+          {
+            "id": 4,
+            "title": "适合任意人群",
+            "description": "外观很漂亮，有个显示屏，好高大尚，睡眠模式非常安静！",
+            "imgUrl": "./static/image/commodity/qrcode.png"
+          },
+          {
+            "id": 5,
+            "title": "营养搭配",
+            "description": "外观很漂亮，有个显示屏，好高大尚，睡眠模式非常安静！",
+            "imgUrl": "./static/image/commodity/qrcode.png"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "f_name": "套餐3",
+        "price": 46,
+        "stock": 100,
+        "src": "./static/image/commodity/example.png",
+        "buyNum": 0,
+        "attibutes": [
+          {
+            "id": 1,
+            "title": "外观漂亮",
+            "description": "外观很漂亮，有个显示屏，好高大尚，睡眠模式非常安静！",
+            "imgUrl": "./static/image/commodity/qrcode.png"
+          },
+          {
+            "id": 2,
+            "title": "性价比高",
+            "description": "外观很漂亮，有个显示屏，好高大尚，睡眠模式非常安静！",
+            "imgUrl": "./static/image/commodity/qrcode.png"
+          },
+          {
+            "id": 3,
+            "title": "包装精美",
+            "description": "外观很漂亮，有个显示屏，好高大尚，睡眠模式非常安静！",
+            "imgUrl": "./static/image/commodity/qrcode.png"
+          },
+          {
+            "id": 4,
+            "title": "适合任意人群",
+            "description": "外观很漂亮，有个显示屏，好高大尚，睡眠模式非常安静！",
+            "imgUrl": "./static/image/commodity/qrcode.png"
+          },
+          {
+            "id": 5,
+            "title": "营养搭配",
+            "description": "外观很漂亮，有个显示屏，好高大尚，睡眠模式非常安静！",
+            "imgUrl": "./static/image/commodity/qrcode.png"
+          }
+        ]
+      }
+    ]
+  },
+  "hotGoods": {
+    "data": [
+      {
+        "id": 1,
+        "name": "香辣鸡腿堡 - 1",
+        "price": 46,
+        "stock": 100,
+        "src": "./static/image/commodity/example.png",
+        "buyNum": 0,
+        "attibutes": [
+          {
+            "id": 1,
+            "title": "外观漂亮",
+            "description": "外观很漂亮，有个显示屏，好高大尚，睡眠模式非常安静！",
+            "imgUrl": "./static/image/commodity/qrcode.png"
+          },
+          {
+            "id": 2,
+            "title": "性价比高",
+            "description": "外观很漂亮，有个显示屏，好高大尚，睡眠模式非常安静！",
+            "imgUrl": "./static/image/commodity/qrcode.png"
+          },
+          {
+            "id": 3,
+            "title": "销量高",
+            "description": "外观很漂亮，有个显示屏，好高大尚，睡眠模式非常安静！",
+            "imgUrl": "./static/image/commodity/qrcode.png"
+          },
+          {
+            "id": 4,
+            "title": "适合任意人群",
+            "description": "外观很漂亮，有个显示屏，好高大尚，睡眠模式非常安静！",
+            "imgUrl": "./static/image/commodity/qrcode.png"
+          },
+          {
+            "id": 5,
+            "title": "大众点赞率高",
+            "description": "外观很漂亮，有个显示屏，好高大尚，睡眠模式非常安静！",
+            "imgUrl": "./static/image/commodity/qrcode.png"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "香辣鸡腿堡 - 2",
+        "price": 35,
+        "stock": 100,
+        "src": "./static/image/commodity/example.png",
+        "buyNum": 0,
+        "attibutes": [
+          {
+            "id": 1,
+            "title": "外观漂亮",
+            "description": "外观很漂亮，有个显示屏，好高大尚，睡眠模式非常安静！",
+            "imgUrl": "./static/image/commodity/qrcode.png"
+          },
+          {
+            "id": 2,
+            "title": "性价比高",
+            "description": "外观很漂亮，有个显示屏，好高大尚，睡眠模式非常安静！",
+            "imgUrl": "./static/image/commodity/qrcode.png"
+          },
+          {
+            "id": 3,
+            "title": "销量高",
+            "description": "外观很漂亮，有个显示屏，好高大尚，睡眠模式非常安静！",
+            "imgUrl": "./static/image/commodity/qrcode.png"
+          },
+          {
+            "id": 4,
+            "title": "适合任意人群",
+            "description": "外观很漂亮，有个显示屏，好高大尚，睡眠模式非常安静！",
+            "imgUrl": "./static/image/commodity/qrcode.png"
+          },
+          {
+            "id": 5,
+            "title": "大众点赞率高",
+            "description": "外观很漂亮，有个显示屏，好高大尚，睡眠模式非常安静！",
+            "imgUrl": "./static/image/commodity/qrcode.png"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "name": "香辣鸡腿堡 - 3",
+        "price": 28,
+        "stock": 100,
+        "src": "./static/image/commodity/example.png",
+        "buyNum": 0,
+        "attibutes": [
+          {
+            "id": 1,
+            "title": "外观漂亮",
+            "description": "外观很漂亮，有个显示屏，好高大尚，睡眠模式非常安静！",
+            "imgUrl": "./static/image/commodity/qrcode.png"
+          },
+          {
+            "id": 2,
+            "title": "性价比高",
+            "description": "外观很漂亮，有个显示屏，好高大尚，睡眠模式非常安静！",
+            "imgUrl": "./static/image/commodity/qrcode.png"
+          },
+          {
+            "id": 3,
+            "title": "销量高",
+            "description": "外观很漂亮，有个显示屏，好高大尚，睡眠模式非常安静！",
+            "imgUrl": "./static/image/commodity/qrcode.png"
+          },
+          {
+            "id": 4,
+            "title": "适合任意人群",
+            "description": "外观很漂亮，有个显示屏，好高大尚，睡眠模式非常安静！",
+            "imgUrl": "./static/image/commodity/qrcode.png"
+          },
+          {
+            "id": 5,
+            "title": "大众点赞率高",
+            "description": "外观很漂亮，有个显示屏，好高大尚，睡眠模式非常安静！",
+            "imgUrl": "./static/image/commodity/qrcode.png"
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "name": "香辣鸡腿堡 - 4",
+        "price": 55,
+        "stock": 100,
+        "src": "./static/image/commodity/example.png",
+        "buyNum": 0,
+        "attibutes": [
+          {
+            "id": 1,
+            "title": "外观漂亮",
+            "description": "外观很漂亮，有个显示屏，好高大尚，睡眠模式非常安静！",
+            "imgUrl": "./static/image/commodity/qrcode.png"
+          },
+          {
+            "id": 2,
+            "title": "性价比高",
+            "description": "外观很漂亮，有个显示屏，好高大尚，睡眠模式非常安静！",
+            "imgUrl": "./static/image/commodity/qrcode.png"
+          },
+          {
+            "id": 3,
+            "title": "销量高",
+            "description": "外观很漂亮，有个显示屏，好高大尚，睡眠模式非常安静！",
+            "imgUrl": "./static/image/commodity/qrcode.png"
+          },
+          {
+            "id": 4,
+            "title": "适合任意人群",
+            "description": "外观很漂亮，有个显示屏，好高大尚，睡眠模式非常安静！",
+            "imgUrl": "./static/image/commodity/qrcode.png"
+          },
+          {
+            "id": 5,
+            "title": "大众点赞率高",
+            "description": "外观很漂亮，有个显示屏，好高大尚，睡眠模式非常安静！",
+            "imgUrl": "./static/image/commodity/qrcode.png"
+          }
+        ]
+      }
+    ]
+  },
+  "cooks": {
+    "data": [
+      {
+        "id": 1,
+        "c_name": "王大厨",
+        "experience": 5,
+        "skill": "主食",
+        "details": "做工精致，重量轻薄，体量小容量大，非常喜欢",
+        "src": "./static/image/commodity/example.png"
+      },
+      {
+        "id": 2,
+        "c_name": "梁大厨",
+        "experience": 6,
+        "skill": "甜点",
+        "details": "做工精致，重量轻薄，体量小容量大，非常喜欢",
+        "src": "./static/image/commodity/example.png"
+      },
+      {
+        "id": 3,
+        "c_name": "高大厨",
+        "experience": 3,
+        "skill": "饮品",
+        "details": "做工精致，重量轻薄，体量小容量大，非常喜欢",
+        "src": "./static/image/commodity/example.png"
+      },
+      {
+        "id": 4,
+        "c_name": "李大厨",
+        "experience": 3,
+        "skill": "家常菜",
+        "details": "做工精致，重量轻薄，体量小容量大，非常喜欢",
+        "src": "./static/image/commodity/example.png"
+      },
+      {
+        "id": 4,
+        "c_name": "杨大厨",
+        "experience": 5,
+        "skill": "地方菜",
+        "details": "做工精致，重量轻薄，体量小容量大，非常喜欢",
+        "src": "./static/image/commodity/example.png"
+      }
+    ]
+  }
+}
