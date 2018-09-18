@@ -71,7 +71,7 @@ export default {
         height 60px
         padding 8px 16px
         color #fff
-        animation: bottom-out 1s forwards;
+        /*animation: bottom-out 1s forwards;*/
       &:hover
         .details
           animation: bottom-in 1s forwards;

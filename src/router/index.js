@@ -6,6 +6,7 @@ import Cooks from '@/components/management/Cooks'
 import CommodityList from '@/components/management/CommodityList'
 import OrderOperate from '@/components/orderScreen/OrderOperate'
 
+import UserInfo from '@/components/UserInfo'
 import TestPage from '@/components/Other/Test-Page'
 
 Vue.use(Router)
@@ -45,6 +46,12 @@ export default new Router({
       name: 'OrderOperate',
       title: '购买商品',
       component: OrderOperate
+    },
+    {
+      path: '/view/user-info',
+      name: 'UserInfo',
+      title: '用户信息',
+      component: UserInfo
     }
   ]
 })

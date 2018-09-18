@@ -6,6 +6,7 @@ import 'iview/dist/styles/iview.css' // 导入样式
 import App from './App'
 import router from './router'
 import importDirective from '@/directive' // 自定义指令
+import store from '../store';
 
 Vue.config.productionTip = false
 
@@ -19,6 +20,7 @@ importDirective(Vue)
 new Vue({
   el: '#app',
   router,
+  store,
   template: '<App/>',
   components: {
     App

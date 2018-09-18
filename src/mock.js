@@ -23,6 +23,7 @@ const produceNewsData = function() {
 // Mock.mock( url, post/get , 返回的数据)；
 
 const appData = require('../db.json');
+Mock.mock('/getUser', 'get', appData.userInfo);
 Mock.mock('/api/newsLists', 'post', produceNewsData);
 Mock.mock('/api/getCooks', 'post', appData.cooks);
 Mock.mock('/api/stapleFood', 'post', appData.stapleFood);

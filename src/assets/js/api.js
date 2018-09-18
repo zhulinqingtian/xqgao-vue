@@ -92,7 +92,7 @@ export default {
     return fetch('/api/getSeller', params, 'get')
   },
   getUser (params) {
-    return fetch('/api/getUserInfo', params, 'get')
+    return fetch('/getUser', params, 'get')
   },
   /** 食品列表 **/
   hotGoods (params) {

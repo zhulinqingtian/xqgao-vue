@@ -24,7 +24,7 @@
           </router-link>
         </li>
         <li>
-          <router-link to="/view/setting">
+          <router-link to="/view/user-info">
             设置
             <Icon type="ios-arrow-down" />
           </router-link>

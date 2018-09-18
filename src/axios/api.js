@@ -30,6 +30,9 @@ export function fetch(url, params) {
 }
 
 export default {
+  getUser(url, params) {
+    return fetch('/getUser', params, 'get');
+  },
   JH_news(url, params) {
     return fetch(url, params);
   },
