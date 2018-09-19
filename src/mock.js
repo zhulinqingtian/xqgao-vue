@@ -8,9 +8,14 @@ const produceNewsData = function() {
 	for (let i = 0; i < 100; i++) {
 		let newArticleObject = {
 			title: Random.csentence(5, 30), //  Random.csentence( min, max )
-			thumbnail_pic_s: Random.dataImage('300x250', 'mock的图片'), // Random.dataImage( size, text ) 生成一段随机的 Base64 图片编码
+			thumbnail_pic_s: Random.dataImage('300x250', Mock.mock('@county(true)')), // Random.dataImage( size, text ) 生成一段随机的 Base64 图片编码
 			author_name: Random.cname(), // Random.cname() 随机生成一个常见的中文姓名
-			date: Random.date() + ' ' + Random.time() // Random.date()指示生成的日期字符串的格式,默认为yyyy-MM-dd；Random.time() 返回一个随机的时间字符串
+			date: Random.date() + ' ' + Random.time(), // Random.date()指示生成的日期字符串的格式,默认为yyyy-MM-dd；Random.time() 返回一个随机的时间字符串
+      addr: Mock.mock('@county(true)') //随机生成一个地址
+     // 'age|18-60': 1, //随机生成一个数字 大小在18到60
+     //  email:Mock.mock('@EMAIL()'), //随机生成一个邮箱
+     //  'moblie|1':['13531544954','13632250649','15820292420','15999905612'], //在数组中随机找一个
+
 		}
 		articles.push(newArticleObject)
 	}

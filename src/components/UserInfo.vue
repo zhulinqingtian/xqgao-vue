@@ -4,6 +4,13 @@
     <p>权限：
       <span v-for="p in user.powerList">{{p}} </span>
     </p>
+    <p>
+      我的qq:
+      <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=245350678&site=qq&menu=yes">
+        <img src="http://wpa.qq.com/pa?p=2:975259840:52" align="absmiddle">
+        客服-夏瞳
+      </a>
+    </p>
   </div>
 </template>
 
