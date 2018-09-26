@@ -67,13 +67,14 @@ export default {
 
 <style lang="stylus">
   #header
-    width 1480
+    width 100%
     height 60px
     background-color #fff
     border-bottom 1px solid #d8d8d8
     >ul
-      width 100%
+      width 1480px
       height 100%
+      margin 0 auto
       li
         display inline-block
         padding 22px 34px
@@ -81,5 +82,5 @@ export default {
         color #333
         float left
         &:nth-child(1)
-          width 40%
+          width 35%
 </style>

@@ -2,9 +2,11 @@
   <div id="app">
     <!--公用部分写在这里-->
     <NavBar></NavBar>
-    <!--公用部分写在这里-->
-    <div id="content">
-      <router-view/>
+    <div id="main-block">
+      <!--公用部分写在这里-->
+      <div id="content">
+        <router-view/>
+      </div>
     </div>
   </div>
 </template>
@@ -36,9 +38,11 @@
     -moz-osx-font-smoothing grayscale
     text-align center
     color #2c3e50
+    width 100%
+    font-family '微软雅黑'
+  #app #main-block
     width 1480px
     margin 0 auto
-    font-family '微软雅黑'
   h1, h2
     font-weight normal
   ul
@@ -48,13 +52,5 @@
     position relative
     background-color #f5f5f5
   #content
-    position fixed
-    top 64px
-    left 200px
-    right 0
-    bottom 0
     padding 24px
-    background-color #f5f5f5
-    width 1525px
-    overflow-y scroll
 </style>

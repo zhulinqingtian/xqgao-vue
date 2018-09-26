@@ -41,6 +41,9 @@ export default {
 </script>
 
 <style scoped lang="stylus">
+.title
+  line-height 40px
+  padding 60px 0 10px 0
 .cook-section
   padding 24px
   ul
