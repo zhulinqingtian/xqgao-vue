@@ -68,10 +68,29 @@ export default {
           title: '总价',
           key: 'payment',
           render: (h, params) => {
-            const price = +params.row.price
-            const buyNum = +params.row.buyNum
-            const payment = price * buyNum
+            const price = +params.row.price;
+            const buyNum = +params.row.buyNum;
+            const payment = price * buyNum;
             return h('span', {}, payment)
+          }
+        },
+        {
+          title: '操作',
+          className: 'last-td-operate',
+          render: (h, params) => {
+            return h('div', {}, [
+              h('span', {
+                  style: {color:'#3596fc', paddingRight:'4px'}
+                }, '编辑'),
+              h('span', {
+                style: {color:'#3596fc'},
+                on: {
+                  click: () => {
+                    this._deleteOneData(params.row);
+                  }
+                }
+              }, '删除')
+            ]);
           }
         }
       ],
@@ -87,26 +106,26 @@ export default {
   mounted () {},
   methods: {
     _showBuyList: function (buyListData) {
-      this.buyListData = buyListData
+      this.buyListData = buyListData;
     },
     _showDataPush: function (item) {
-      this.buyListData.push(item)
+      return item ? this.buyListData.push(item) : '';
     },
     _changeItem: function (item) {
       this.item = item
     },
     _changeSelected (selection) {
-      this.selection = selection // totalPayment
-      this.totalPayment = 0
-      const that = this
+      this.selection = selection; // totalPayment
+      this.totalPayment = 0;
+      const that = this;
       this.selection.forEach(function (v) {
         that.totalPayment += +v.price * +v.buyNum
       })
     },
     _toSettle () {
-      this.settleAccountsModal = true
-      const that = this
-      this.settleGoods = []
+      this.settleAccountsModal = true;
+      const that = this;
+      this.settleGoods = [];
       this.selection.forEach(function (v) {
         that.settleGoods.push(v.f_name)
       })
@@ -128,12 +147,13 @@ export default {
     position relative
     overflow-y hidden
     .block
+      min-height 800px;
       &.left
-        width 500px
+        width 576px
         padding 24px
       &.right
         position absolute
-        left 533px
+        left 610px
         right 0
         top 0
         bottom 0
@@ -167,7 +187,6 @@ export default {
       left 40px
       right 0
       bottom 0
-
 </style>
 <style lang="stylus">
   .ivu-tabs .ivu-tabs-tabpane

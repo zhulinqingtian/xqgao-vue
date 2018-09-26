@@ -11,6 +11,7 @@
             <img :src="item.src" alt="">
             <p>{{item.f_name}}</p>
             <p>{{item.price}}元</p>
+            <p>编号：{{item.id}}</p>
           </div>
         </TabPane>
         <TabPane label="小食"  class="food-section">
@@ -18,6 +19,7 @@
             <img :src="item.src" alt="">
             <p>{{item.f_name}}</p>
             <p>{{item.price}}元</p>
+            <p>编号：{{item.id}}</p>
           </div>
         </TabPane>
         <TabPane label="饮料" class="food-section">
@@ -25,6 +27,7 @@
             <img :src="item.src" alt="">
             <p>{{item.f_name}}</p>
             <p>{{item.price}}元</p>
+            <p>编号：{{item.id}}</p>
           </div>
         </TabPane>
         <TabPane label="套餐" class="food-section">
@@ -32,6 +35,7 @@
             <img :src="item.src" alt="">
             <p>{{item.f_name}}</p>
             <p>{{item.price}}元</p>
+            <p>编号：{{item.id}}</p>
           </div>
         </TabPane>
       </Tabs>
@@ -110,56 +114,56 @@ export default {
     }
   },
   mounted () {
-    this._stapleFood()
-    this._snacksFood()
-    this._getPackages()
-    this._getDrinks()
-    this._hotGoods()
+    this._stapleFood();
+    this._snacksFood();
+    this._getPackages();
+    this._getDrinks();
+    this._hotGoods();
   },
   methods: {
     // 热搜
     _hotGoods () {
       API.hotGoods('/api/hotGoods', {})
         .then(result => {
-          this.hotGoods = result.data
+          this.hotGoods = result.data;
         }).catch(err => {
-          this.$Message.error(err)
+          this.$Message.error(err);
         })
     },
     // 获取主食列表
     _stapleFood () {
       API.stapleFood('/api/stapleFood', {})
         .then(result => {
-          this.stapleFoodData = result.data
+          this.stapleFoodData = result.data;
         }).catch(err => {
-        this.$Message.error(err)
+        this.$Message.error(err);
       })
     },
     // 获取小食列表
     _snacksFood () {
       API.snacksFood('/api/snacks', {})
         .then(result => {
-          this.snacksData = result.data
+          this.snacksData = result.data;
         }).catch(err => {
-        this.$Message.error(err)
+        this.$Message.error(err);
       })
     },
     // 获取套餐列表
     _getPackages () {
       API.getPackages('/api/drinks', {})
         .then(result => {
-          this.packagesData = result.data
+          this.packagesData = result.data;
         }).catch(err => {
-        this.$Message.error(err)
+        this.$Message.error(err);
       })
     },
     // 获取饮料列表
     _getDrinks () {
       API.getDrinks('/api/packages', {})
         .then(result => {
-          this.drinksData = result.data
+          this.drinksData = result.data;
         }).catch(err => {
-        this.$Message.error(err)
+        this.$Message.error(err);
       })
     },
     // 查看详情
@@ -180,7 +184,7 @@ export default {
       }
 
       if (!this.buyNum) {
-        return this.$Message.error('请选择商品数量')
+        return this.$Message.error('请选择商品数量');
       }
 
       if (selectName.join('').indexOf(currentItem.f_name) > -1) { // 已经添加过该商品 删除记录
