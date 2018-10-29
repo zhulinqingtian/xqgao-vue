@@ -36,6 +36,12 @@
           </router-link>
         </li>
         <li>
+          <router-link to="/view/test-proxy">
+            测试代理
+            <Icon type="ios-arrow-down" />
+          </router-link>
+        </li>
+        <li>
           <router-link to="/view/news-list">
             最新动态
             <Icon type="ios-arrow-down" />
@@ -82,5 +88,5 @@ export default {
         color #333
         float left
         &:nth-child(1)
-          width 35%
+          width 24%
 </style>

@@ -53,5 +53,17 @@ export default {
   },
   hotGoods(url, params) {
     return fetch(url, params, 'get')
+  },
+  getBlog(url, params) {
+    return fetch(url, params, 'get')
+  },
+  getJueJinList(url, params) {
+    return fetch(url, params, 'get')
+  },
+  getEventList(url, params) {
+    return fetch(url, params, 'get')
+  },
+  getCsdnList(url, params) {
+    return fetch(url, params, 'get')
   }
 }

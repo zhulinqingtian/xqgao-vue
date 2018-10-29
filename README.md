@@ -1,6 +1,6 @@
 # mockjs
 
-> A Vue.js project of mockjs
+> A Vue.js project of vuejs
 
 ## Build Setup
 

@@ -1,14 +1,23 @@
+/**
+ * 封装axios
+ */
+
+/**
+ *  用 拦截器 axios.interceptors 对请求和响应做些拦截，定义一下 API 的前缀，处理一些常见的 HTTP 状态码
+ */
+
 import axios from 'axios'
 import iView from 'iview'
 
 const apiServerUrl = window.location.protocol + '//' + window.location.host
 
 // axios 配置
-axios.defaults.timeout = 30000
+axios.defaults.timeout = 30000;
 axios.defaults.headers.post['Content-Type'] = 'application/json;charset=UTF-8'
 axios.defaults.baseURL = apiServerUrl
 
-// POST传参序列化
+// TODO http request 拦截器 一般用来在请求前塞一些全局的配置、或开启一些 css 加载动画
+// TODO 拦截请求  POST传参序列化
 axios.interceptors.request.use(config => {
   if (config.method === 'post') {
     // 弃用
@@ -23,19 +32,19 @@ axios.interceptors.request.use(config => {
     }
   }
 
-  // Authorization
-  const token = localStorage.getItem('shomopAdminToken')
+  // Authorization  授权
+  const token = localStorage.getItem('vueToken')
   config.headers.Authorization = token
-
+  // TODO 在发送请求之前对请求数据做一些处理
   return config
 }, error => {
   return Promise.reject(error)
-})
+});
 
-// 返回状态判断
+// TODO 拦截响应  返回状态判断
 axios.interceptors.response.use(res => {
   // console.log('axios.interceptors.response : res : ', res);
-
+  // TODO 返回数据之前的处理
   if (res.data.code === 'ERR_SESSION_TIMEOUT' && res.data.message === '未登陆或登陆状态已失效！' && res.data.data) {
     window.location.href = res.data.data
     return true
@@ -49,7 +58,7 @@ axios.interceptors.response.use(res => {
   return res
 }, error => {
   return Promise.reject(error)
-})
+});
 
 export function fetch (url, param = {}, method = 'get') {
   return new Promise((resolve, reject) => {

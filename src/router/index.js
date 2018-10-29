@@ -8,6 +8,9 @@ import OrderOperate from '@/components/orderScreen/OrderOperate'
 
 import UserInfo from '@/components/UserInfo'
 import TestPage from '@/components/Other/Test-Page'
+import TestProxy from '@/components/Other/Test-Proxy'
+
+// 这里使用的@，在webpack.base.conf.js中定义，指向src目录
 
 Vue.use(Router)
 
@@ -34,6 +37,12 @@ export default new Router({
       name: 'TestPage',
       title: '测试页',
       component: TestPage
+    },
+    {
+      path: '/view/test-proxy',
+      name: 'TestProxy',
+      title: '测试代理',
+      component: TestProxy
     },
     {
       path: '/view/commodity-list',
