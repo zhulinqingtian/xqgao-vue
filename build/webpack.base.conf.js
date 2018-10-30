@@ -19,7 +19,8 @@ module.exports = {
       : config.dev.assetsPublicPath
   },
   resolve: {
-    extensions: ['.js', '.vue', '.json'],
+    extensions: ['.js', '.vue', '.json'], // 解析模块的拓展名的数组
+    // 如果希望模块加载的时候带拓展名(比如require('./somefile.ext'))，需要在数组里添加一个空字符串
     alias: {
       'vue$': 'vue/dist/vue.esm.js',
       '@': resolve('src')

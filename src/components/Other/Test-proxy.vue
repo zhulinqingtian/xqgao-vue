@@ -117,6 +117,6 @@
     line-height: 30px;
   }
   h3 span:hover{
-    color: #1d7046;
+    color: #52a77c;
   }
 </style>
