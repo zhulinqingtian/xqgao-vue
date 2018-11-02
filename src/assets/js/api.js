@@ -1,5 +1,5 @@
 /**
- * 封装axios
+ * 封装axios  未使用此文件，ajax请求使用的是axios文件夹下的api.js
  */
 
 /**
