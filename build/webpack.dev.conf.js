@@ -19,6 +19,8 @@ module.exports = merge(baseWebpackConfig, {
   devtool: '#cheap-module-eval-source-map',
   plugins: [
     new webpack.DefinePlugin({
+      // webpack配在这里配置全局标识变量，配置之后可以在项目中直接使用该变量
+      //需要注意的是，配置的变量的值必须使用单引号包双引号，或者双引号包单引号，不然会导致报错
       'process.env': config.dev.env
     }),
     // https://github.com/glenjamin/webpack-hot-middleware#installation--usage
@@ -32,4 +34,28 @@ module.exports = merge(baseWebpackConfig, {
     }),
     new FriendlyErrorsPlugin()
   ]
-})
+});
+
+/**
+ * webpack插件介绍
+ */
+
+/**
+ * 1.webpack.DefinePlugin
+ * =======================
+ * 配置全局变量，配置之后可以在项目中直接使用该变量
+ * 需要注意的是，配置的变量的值必须使用单引号包双引号，或者双引号包单引号，不然会导致报错
+ *
+ *
+ * 2.html-webpack-plugin
+ * ======================
+ *  提供HTML自动创建的插件，会将编译好的js文件内嵌进HTML中。
+ *  plugins: [
+     new HtmlWebpackPlugin({
+          filename: 'index.html',
+          template: 'src/index.html',
+          inject: true
+        })
+    ]
+ */
+
