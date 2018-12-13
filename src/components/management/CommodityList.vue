@@ -1,7 +1,8 @@
 <template>
   <div>
+    <!--<input type="text" v-autoFcs>-->
     <div class="mainBlock" v-show="mainBlock">
-      <p class="page-title">商品列表</p>
+      <p class="page-title"  v-textGreen="options">商品列表</p>
       <p class="sub-title">the lists of commodity</p>
       <div class="main panel">
         <p>主食</p>
@@ -74,6 +75,10 @@ export default {
   name: 'commodity-list',
   data () {
     return {
+      options: {
+        color: '#3569fc',
+        bgColor: '#f0f0f0'
+      },
       // 主食
       stapleFoodData: [],
       snacksData: [],
