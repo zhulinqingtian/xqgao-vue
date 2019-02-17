@@ -96,7 +96,7 @@ export default {
     return fetch(url, params, 'get')
   },
   test(url, params) {
-    var a = 1;
+    var a = {name: '哈哈哈'};
     console.log(a);
     return fetch(url, params, 'get')
   }
