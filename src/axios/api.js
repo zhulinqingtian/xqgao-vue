@@ -94,5 +94,10 @@ export default {
   },
   getCsdnList(url, params) {
     return fetch(url, params, 'get')
+  },
+  test(url, params) {
+    var a = 1;
+    console.log(a);
+    return fetch(url, params, 'get')
   }
 }
