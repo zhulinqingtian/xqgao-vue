@@ -5,6 +5,7 @@
     <div id="main-block">
       <!--公用部分写在这里-->
       <div id="content">
+        <router-link to="/view/star-test">测试星级</router-link>
         <router-view/>
       </div>
     </div>

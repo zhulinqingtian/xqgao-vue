@@ -10,6 +10,8 @@ import UserInfo from '@/components/UserInfo'
 import TestPage from '@/components/Other/Test-Page'
 import TestProxy from '@/components/Other/Test-Proxy'
 
+import TestStar from '@/components/star/star-test'
+
 // 这里使用的@，在webpack.base.conf.js中定义，指向src目录
 
 Vue.use(Router)
@@ -61,6 +63,12 @@ export default new Router({
       name: 'UserInfo',
       title: '用户信息',
       component: UserInfo
+    },
+    {
+      path: '/view/star-test',
+      name: 'TestStar',
+      title: '测试星级',
+      component: TestStar
     }
   ]
 })
