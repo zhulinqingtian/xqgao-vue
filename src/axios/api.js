@@ -38,7 +38,7 @@ axios.interceptors.request.use(function(config) {
     return Promise.reject(error);
   });
 
-// 响应拦截器
+// 响应拦截器aaa
 axios.interceptors.response.use(function(response) {
   return response;
 }, function(error) {
@@ -93,6 +93,11 @@ export default {
     return fetch(url, params, 'get')
   },
   getCsdnList(url, params) {
+    return fetch(url, params, 'get')
+  },
+  test(url, params) {
+    var a = {name: '哈哈哈'};
+    console.log(a);
     return fetch(url, params, 'get')
   }
 }
