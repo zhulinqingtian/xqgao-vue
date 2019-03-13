@@ -29,7 +29,7 @@ export default {
   },
   methods: {
     _getCooks: function () {
-      API.getCooks('/api/getCooks', {})
+      API.getCooks({})
         .then(result => {
           this.cooksData = result.data
         }).catch(err => {

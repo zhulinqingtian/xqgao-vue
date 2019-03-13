@@ -2,7 +2,7 @@
   <div>
     <!--<input type="text" v-autoFcs>-->
     <div class="mainBlock" v-show="mainBlock">
-      <p class="page-title"  v-textGreen="options">商品列表</p>
+      <p class="page-title">商品列表</p> <!--v-textGreen="options"-->
       <p class="sub-title">the lists of commodity</p>
       <div class="main panel">
         <p>主食</p>
@@ -130,54 +130,63 @@ export default {
     }
   },
   created () {
-    this._stapleFood()
-    this._snacksFood()
-    this._getPackages()
-    this._getDrinks()
+    this._stapleFood();
+    this._snacksFood();
+    this._getPackages();
+    this._getDrinks();
   },
   components: {CommodityDetails},
   methods: {
     // 获取主食列表
     _stapleFood () {
-      API.stapleFood('/api/stapleFood', {})
+      this.$axios.get('/api/stapleFood')
         .then(result => {
-          this.stapleFoodData = result.data
-        }).catch(err => {
-          this.$Message.error(err)
+          this.stapleFoodData = result.data;
         })
+        .catch(err => {
+          this.$Message.error(err || 'error');
+        });
     },
+
     // 获取小食列表
     _snacksFood () {
-      API.snacksFood('/api/snacks', {})
+      API.snacksFood()
         .then(result => {
-          this.snacksData = result.data
-        }).catch(err => {
-        this.$Message.error(err)
+          this.snacksData = result.data;
+        })
+        .catch(err => {
+        this.$Message.error(err || 'error');
       })
     },
+
     // 获取套餐列表
     _getPackages () {
-      API.getPackages('/api/drinks', {})
+      API.getPackages()
         .then(result => {
-          this.packagesData = result.data
-        }).catch(err => {
-        this.$Message.error(err)
+          this.packagesData = result.data;
+        })
+        .catch(err => {
+        this.$Message.error(err || 'error');
       })
     },
+
     // 获取饮料列表
     _getDrinks () {
-      API.getDrinks('/api/packages', {})
+      API.getDrinks()
         .then(result => {
-          this.drinksData = result.data
-        }).catch(err => {
-          this.$Message.error(err)
+          this.drinksData = result.data;
+        })
+        .catch(err => {
+          this.$Message.error(err || 'error');
         })
     },
+
     _getDetails (item) {
-      this.mainBlock = false
-      this.currentItem = item
-      this.testItem = item
+      this.mainBlock = false;
+      this.currentItem = item;
+      this.testItem = item;
     },
+
     _changeVisible (mainBlock) { // mainBlock = false
       this.mainBlock = !mainBlock // !mainBlock = true
     }

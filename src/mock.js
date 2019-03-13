@@ -1,7 +1,31 @@
-// 引入mockjs
-const Mock = require('mockjs');
-// 获取 mock.Random 对象
-const Random = Mock.Random;
+/**
+ * 此文件用于定义接口返回的数据
+ */
+
+const Mock = require('mockjs'); // 引入mockjs
+
+const Random = Mock.Random; // 获取 mock.Random 对象
+
+const domain = 'http://mockjs.com/api'; // 定义默认域名，随便写
+
+const code = 200; // 返回的状态码
+
+
+import appData from '../db.json';
+console.log('appData:', appData);
+
+
+Mock.mock('/api/stapleFood', "get", {
+  "code": 200,
+  "data": {
+    "fullName": "@CNAME", // 随机生成中文人名
+    "userId": 1000234234001,
+    "username": "zhangsan"
+  },
+  "msg": "success"
+});
+
+
 // mock一组数据
 const produceNewsData = function() {
 	let articles = [];
@@ -27,12 +51,13 @@ const produceNewsData = function() {
 
 // Mock.mock( url, post/get , 返回的数据)；
 
-const appData = require('../db.json');
-Mock.mock('/getUser', 'get', appData.userInfo);
-Mock.mock('/api/newsLists', 'post', produceNewsData);
-Mock.mock('/api/getCooks', 'post', appData.cooks);
-Mock.mock('/api/stapleFood', 'post', appData.stapleFood);
-Mock.mock('/api/snacks', 'post', appData.snacks);
-Mock.mock('/api/drinks', 'post', appData.drinks);
-Mock.mock('/api/packages', 'post', appData.packages);
-Mock.mock('/api/hotGoods', 'post', appData.hotGoods);
+// 定义请求链接，类型，还有返回数据
+
+// Mock.mock('/getUser', 'get', appData.userInfo);
+Mock.mock('/api/newsLists', 'get', produceNewsData);
+Mock.mock('/api/getCooks', 'get', appData.cooks);
+// Mock.mock('/api/stapleFood', 'get', appData.stapleFood);
+Mock.mock('/api/snacks', 'get', appData.snacks);
+Mock.mock('/api/drinks', 'get', appData.drinks);
+Mock.mock('/api/packages', 'get', appData.packages);
+Mock.mock('/api/hotGoods', 'get', appData.hotGoods);

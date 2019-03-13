@@ -8,13 +8,17 @@ import router from './router';
 import importDirective from '@/directive'; // 自定义指令
 import store from '../store';
 
+import axios from 'axios'; //引用axios
+Vue.prototype.$axios = axios; //解决在其他组件无法使用axios命令
+
+Vue.use(iView);
+importDirective(Vue);
+
+Vue.config.devtools = process.env.NODE_ENV === 'development';
 Vue.config.productionTip = false;
 
 // 引入mockjs
 require('./mock.js');
-
-Vue.use(iView)
-importDirective(Vue);
 
 /* eslint-disable no-new */
 new Vue({

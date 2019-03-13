@@ -3,15 +3,16 @@
  */
 
 import axios from 'axios'
-import vue from 'vue'
 
-axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded'
+// axios 配置
+const apiServerUrl = window.location.protocol + '//' + window.location.host;
+axios.defaults.timeout = 30000;
+// axios.defaults.headers.post['Content-Type'] = 'application/json;charset=UTF-8';
+axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded';
+axios.defaults.baseURL = apiServerUrl;
 
 // TODO http request 拦截器 一般用来在请求前塞一些全局的配置、或开启一些 css 加载动画
 // TODO 拦截请求  POST传参序列化
-
-const apiServerUrl = window.location.protocol + '//' + window.location.host
-axios.defaults.baseURL = apiServerUrl;
 
 axios.interceptors.request.use(function(config) {
   if (config.method === 'post') {
@@ -28,8 +29,8 @@ axios.interceptors.request.use(function(config) {
   }
 
   // Authorization  授权
-  const token = localStorage.getItem('vueToken')
-  config.headers.Authorization = token;
+  // const token = localStorage.getItem('vueToken')
+  // config.headers.Authorization = token;
 
   // TODO 在发送请求之前对请求数据做一些处理
 
@@ -46,54 +47,74 @@ axios.interceptors.response.use(function(response) {
 });
 
 // 封装axios的post请求
-export function fetch(url, params) {
+export function fetch(url, param = {}, method = 'get') {
   return new Promise((resolve, reject) => {
-    axios.post(url, params)
+    const config = {
+      method: method,
+      url: url
+    };
+    if (method === 'get') {
+      config.params = param;
+    } else {
+      config.data = param;
+      config.headers = {
+        'Content-Type': 'application/json;charset=UTF-8'
+      };
+    }
+
+    axios(config)
       .then(response => {
+        console.log('********* axios response:', response);
+        // response是个Object对象，但是 response.data 才是本地JSON文件的对象
+        // JSON文件如果有注释，JSON.parse报错含有非法字符/。JSON文件本来就是对象，再用 JSON.parse(),会报错含有非法字符o
         resolve(response.data);
       })
-      .catch((error) => {
-        reject(error);
-      })
-  })
+      .catch(error => {
+        reject(error.data);
+      });
+  });
 }
 
+
 export default {
-  getUser(url, params) {
+  getUser(params) {
     return fetch('/getUser', params, 'get');
   },
   JH_news(url, params) {
     return fetch(url, params);
   },
-  getCooks(url, params) {
-    return fetch(url, params, 'get');
+  getCooks(params) {
+    return fetch('/api/getCooks', params, 'get');
   },
-  stapleFood(url, params) {
-    return fetch(url, params, 'get')
+  stapleFood(params) {
+    return fetch('/api/stapleFood', params, 'get')
   },
-  snacksFood(url, params) {
-    return fetch(url, params, 'get')
+  snacksFood(params) {
+    return fetch('/api/snacksFood', params, 'get')
   },
-  getDrinks(url, params) {
-    return fetch(url, params, 'get')
+  getDrinks(params) {
+    return fetch('/api/drinks', params, 'get')
   },
-  getPackages(url, params) {
-    return fetch(url, params, 'get')
+  getPackages(params) {
+    return fetch('/api/packages', params, 'get')
   },
-  hotGoods(url, params) {
-    return fetch(url, params, 'get')
+  hotGoods(params) {
+    return fetch('/api/hotGoods', params, 'get')
   },
-  getBlog(url, params) {
-    return fetch(url, params, 'get')
+  getBlog(params) {
+    return fetch('/v1/getListByLastTime?src=web&pageNum=1', params, 'get')
   },
-  getJueJinList(url, params) {
-    return fetch(url, params, 'get')
+  getJueJinList(params) {
+    return fetch('/v1/getListByLastTime?uid=&client_id=&token=&src=web&pageNum=1', params, 'get')
   },
-  getEventList(url, params) {
-    return fetch(url, params, 'get')
+  getEventList(params) {
+    return fetch('/v2/getEventList?uid=&client_id=&token=&src=web&orderType=startTime&cityAlias=&pageNum=3&pageSize=20', params, 'get')
   },
-  getCsdnList(url, params) {
-    return fetch(url, params, 'get')
+  getArticleList(params) {
+    return fetch('/api/articles?type=more&category=career&shown_offset=1540784729309051', params, 'get')
+  },
+  getWebList(params) {
+    return fetch('/api/articles?type=more&category=web&shown_offset=1540792654004015', params, 'get')
   },
   test(url, params) {
     var a = {name: '哈哈哈'};

@@ -71,29 +71,46 @@
     },
     methods: {
       getBlog() {
-        API.getBlog("/v1/getListByLastTime?src=web&pageNum=1").then(res => {
-          this.blogList = res.d;
-        });
+        API.getBlog()
+          .then(res => {
+            this.blogList = res.d;
+          }).catch(err => {
+            console.log('err:', err);
+          });
       },
       getList() {
-        API.getJueJinList("/v1/getListByLastTime?uid=&client_id=&token=&src=web&pageNum=1").then(res => {
-          this.JueJinList = res.d;
-        });
+        API.getJueJinList()
+          .then(res => {
+            this.JueJinList = res.d;
+          }).catch(err => {
+            console.log('err:', err);
+          });
       },
       getEventList() {
-        API.getEventList("/v2/getEventList?uid=&client_id=&token=&src=web&orderType=startTime&cityAlias=&pageNum=3&pageSize=20").then(res => {
-          this.EventList = res.d;
-        });
+        API.getEventList()
+          .then(res => {
+            this.EventList = res.d;
+          }).catch(err => {
+            console.log('err:', err);
+          });
       },
       getArticleList() {
-        API.getEventList("/api/articles?type=more&category=career&shown_offset=1540784729309051").then(res => {
-          this.articleList = res.articles;
-        });
+        API.getArticleList()
+          .then(res => {
+            console.log('res:', res);
+            this.articleList = res.articles;
+          }).catch(err => {
+            console.log('err:', err);
+          });
       },
       getWebList() {
-        API.getEventList("/api/articles?type=more&category=web&shown_offset=1540792654004015").then(res => {
-          this.webList = res.articles;
-        });
+        API.getWebList()
+          .then(res => {
+            this.webList = res.articles;
+          })
+          .catch(err => {
+            console.log('err:', err);
+          });
       }
     }
   };

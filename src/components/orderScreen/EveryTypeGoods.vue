@@ -123,7 +123,7 @@ export default {
   methods: {
     // 热搜
     _hotGoods () {
-      API.hotGoods('/api/hotGoods', {})
+      API.hotGoods({})
         .then(result => {
           this.hotGoods = result.data;
         }).catch(err => {
@@ -132,7 +132,7 @@ export default {
     },
     // 获取主食列表
     _stapleFood () {
-      API.stapleFood('/api/stapleFood', {})
+      API.stapleFood({})
         .then(result => {
           this.stapleFoodData = result.data;
         }).catch(err => {
@@ -141,7 +141,7 @@ export default {
     },
     // 获取小食列表
     _snacksFood () {
-      API.snacksFood('/api/snacks', {})
+      API.snacksFood({})
         .then(result => {
           this.snacksData = result.data;
         }).catch(err => {
@@ -150,7 +150,7 @@ export default {
     },
     // 获取套餐列表
     _getPackages () {
-      API.getPackages('/api/drinks', {})
+      API.getPackages({})
         .then(result => {
           this.packagesData = result.data;
         }).catch(err => {
@@ -159,7 +159,7 @@ export default {
     },
     // 获取饮料列表
     _getDrinks () {
-      API.getDrinks('/api/packages', {})
+      API.getDrinks({})
         .then(result => {
           this.drinksData = result.data;
         }).catch(err => {
