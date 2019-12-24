@@ -12,6 +12,8 @@ import TestProxy from '@/components/Other/Test-Proxy'
 
 import TestStar from '@/components/star/star-test'
 
+import TestForm from '@/components/star/star-form' // 测试表单
+
 // 这里使用的@，在webpack.base.conf.js中定义，指向src目录
 
 Vue.use(Router)
@@ -69,6 +71,12 @@ export default new Router({
       name: 'TestStar',
       title: '测试星级',
       component: TestStar
+    },
+    {
+      path: '/view/star-form',
+      name: 'TestForm',
+      title: '测试表单',
+      component: TestForm
     }
   ]
 })
